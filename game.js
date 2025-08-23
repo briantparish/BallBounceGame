@@ -1,5 +1,4 @@
 window.onload = function () {
-  
   // Game setup and functions
   // Get the canvas and context
   const canvas = document.getElementById("gameCanvas");
@@ -18,7 +17,7 @@ window.onload = function () {
   let rightPressed = false;
   let leftPressed = false;
   let paddleSpeed = 7;
-  let ballColor = ["#0095DD", "#0095DD", "#dd1a00ff", "#1686007e", "#6b018bc7", "#9c5901d5", "#dd00d27c", "#1713f5ff"]
+  let ballColor = ["#0095DD", "#0095DD", "#dd1a00ff", "#34db13e0", "#f35edaea", "#e48406ea", "#e5ff00e8", "#5956ffff"]
 
   let totalScore = 0;
   let lives = 3;
@@ -93,7 +92,7 @@ window.onload = function () {
     if (y + dy < ballRadius) {
       dy = -dy;
     } else if (y + dy > canvas.height - ballRadius) {
-      if ((x > paddleX -15) && (x < paddleX + paddleWidth + 15)) {
+      if ((x > paddleX -25) && (x < paddleX + paddleWidth + 25)) {
         dy = -dy;
         score++; // Increase score for successful bounce
         totalScore++;
@@ -164,5 +163,3 @@ window.onload = function () {
   // Start the game
   draw();
 };
-
-

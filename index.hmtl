@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ball Bounce Game</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      flex-direction: column;
+    }
+    canvas {
+      border: 1px solid black;
+      background-color: #e3e3e3;
+    }
+    #info {
+      font-family: Arial, sans-serif;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="info">
+    Lives: <span id="lives">3</span> | Score: <span id="score">0</span> | Level: <span id="level">1</span> | Total Score: <span id="totalScore">0</span>
+  </div>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>

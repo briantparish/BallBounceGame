@@ -18,7 +18,7 @@ window.onload = function () {
   let rightPressed = false;
   let leftPressed = false;
   let paddleSpeed = 7;
-  let ballColor = ["#0095DD", "#0095DD", "#dd1a00ff", "#1686007e", "#6b018bc7", "#46dd005e", "#dd00d2ff", "#1713f5ff"]
+  let ballColor = ["#0095DD", "#0095DD", "#dd1a00ff", "#1686007e", "#6b018bc7", "#9c5901d5", "#dd00d27c", "#1713f5ff"]
 
   let totalScore = 0;
   let lives = 3;
@@ -164,4 +164,5 @@ window.onload = function () {
   // Start the game
   draw();
 };
+
 

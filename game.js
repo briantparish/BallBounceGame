@@ -17,7 +17,7 @@ window.onload = function () {
   let rightPressed = false;
   let leftPressed = false;
   let paddleSpeed = 7;
-  let ballColor = ["#0095DD", "#0095DD", "#dd1a00ff", "#34db13e0", "#f35edaea", "#e48406ea", "#e5ff00e8", "#5956ffff"]
+  let ballColor = ["#0095DD", "#0095DD", "#dd1a00ff", "#34db13ff", "#05eff7ff", "#e48406ff", "#e5ff00e8", "#5956ffff"]
 
   let totalScore = 0;
   let lives = 3;

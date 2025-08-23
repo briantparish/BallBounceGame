@@ -1,4 +1,5 @@
 window.onload = function () {
+  
   // Game setup and functions
   // Get the canvas and context
   const canvas = document.getElementById("gameCanvas");

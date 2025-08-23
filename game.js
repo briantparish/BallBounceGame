@@ -93,7 +93,7 @@ window.onload = function () {
     if (y + dy < ballRadius) {
       dy = -dy;
     } else if (y + dy > canvas.height - ballRadius) {
-      if (x > paddleX && x < paddleX + paddleWidth) {
+      if ((x > paddleX -15) && (x < paddleX + paddleWidth + 15)) {
         dy = -dy;
         score++; // Increase score for successful bounce
         totalScore++;

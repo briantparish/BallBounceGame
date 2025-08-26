@@ -17,7 +17,7 @@ window.onload = function () {
   let rightPressed = false;
   let leftPressed = false;
   let paddleSpeed = 7;
-  let ballColor = ["#0095DD", "#0095DD", "#dd1a00ff", "#34db13ff", "#05eff7ff", "#e48406ff", "#e5ff00e8", "#5956ffff"]
+  let ballColor = ["#0095DD", "#0095DD", "#f85742ff", "#75fc5aff", "#05eff7ff", "#fcaf4bff", "#e5ff00e8", "#6461f0ff"]
 
   let totalScore = 0;
   let lives = 3;
@@ -27,7 +27,7 @@ window.onload = function () {
   let levelPaddleSizeChange = .9; // 10% decrease in paddle size
   let paddleSpeedIncrease = 1.1;
 
-   let gameOver = false;
+  let gameOver = false;
 
   // Event listeners to move the paddle
   document.addEventListener("keydown", keyDownHandler, false);
@@ -52,7 +52,7 @@ window.onload = function () {
   // Draw the ball
   function drawBall() {
     ctx.beginPath();
-    ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+    ctx.arc(x, y, ballRadius, 0,  2* Math.PI, true);
     if(level < 8){
         ctx.fillStyle = ballColor[level];
     }else{
@@ -99,7 +99,6 @@ window.onload = function () {
       } else {
         lives--;
         if (lives <= 0) {
-          //drawGameOver(); // Display "Game Over" message
           gameOver = true; // Set the gameOver flag to true
         } else {
           x = canvas.width / 2;
@@ -136,7 +135,7 @@ window.onload = function () {
 
     // Draw the "Game Over" text on the canvas
   function drawGameOver() {
-    ctx.font = "30px Arial";
+    ctx.font = "60px Arial";
     ctx.fillStyle = "red";
     ctx.textAlign = "center";
     ctx.fillText("Game Over", canvas.width / 2, canvas.height / 2);
